@@ -1,0 +1,909 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting default font family for the entire body */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Container styles for fixed-width layout */
+.container {
+  max-width: 1000px; /* Maximum width for content */
+  width: 90%; /* Percentage width for responsiveness */
+  margin-left: auto; /* Center container horizontally */
+  margin-right: auto; /* Center container horizontally */
+}
+
+/* Container styles for full-width layout */
+.container-fluid {
+  max-width: 1200px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Utility class for capitalizing text */
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Navigation bar styles */
+.nav {
+  background-color: rgb(18, 17, 19);
+  padding: 10px 0;
+  position: fixed; /* Fixed positioning */
+  top: 0; /* Position at the top of the viewport */
+  width: 100%; /* Full width */
+}
+
+/* Flexbox layout for navigation menu */
+.nav-menu-flex {
+  display: flex; /* Display items in a row */
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+/* Logo styles */
+.logo {
+  color: #e43c09; /* Logo color */
+  font-size: 35px; /* Logo font size */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Burger menu styles */
+.burger {
+  display: none; /* Hide by default */
+}
+
+.burger i {
+  font-size: 25px; /* Burger icon size */
+  color: #e43c09; /* Burger icon color */
+}
+
+/* Menu item styles */
+.menu-item {
+  display: flex; /* Display items in a row */
+  gap: 35px; /* Spacing between items */
+}
+
+.menu-item li {
+  list-style: none; /* Remove default list style */
+}
+
+.menu-item a {
+  font-size: 18px; /* Menu item font size */
+  text-decoration: none; /* Remove underline */
+  color: #fff; /* Menu item text color */
+}
+
+/* Hover effect for menu items */
+.menu-item a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #e43c09; /* Text color on hover */
+}
+
+/* Banner hero section background */
+.banner-hero {
+  background: url(assets/com.jpeg) rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.banner-hero-text {
+  padding: 250px 0; /* Padding */
+  color: #fff; /* Text color */
+}
+
+/* Banner hero title and subtitle styles */
+.banner-hero-title,
+.banner-hero-subtitle {
+  font-size: 95px; /* Title and subtitle font size */
+  font-weight: 500; /* Title and subtitle font weight */
+}
+
+.banner-hero-subtitle {
+  color: #e43c09; /* Subtitle color */
+  margin-bottom: 30px; /* Margin bottom */
+  max-width: 500px; /* Maximum width */
+}
+
+/* Banner text styles */
+.banner-text {
+  margin-bottom: 30px; /* Margin bottom */
+  max-width: 50%; /* Maximum width */
+}
+
+/* Paragraph font style */
+.banner-text p {
+  font-size: 22px;
+  line-height: 35px;
+  font-weight: 400;
+  color: lightgray;
+}
+
+/* Icon styles in banner hero */
+.banner-hero i {
+  color: #e43c09; /* Icon color */
+  font-size: 25px; /* Icon font size */
+}
+
+/* About section styles */
+.about {
+  padding: 120px 0;
+}
+
+/* Flexbox layout for about section */
+.about-flex {
+  display: flex;
+  gap: 120px;
+}
+
+/* Text container for about section */
+.about-text {
+  width: 50%;
+}
+
+/* Heading styles for about section */
+.about-text > h3 {
+  max-width: 400px;
+  font-size: 60px;
+  font-weight: 500;
+}
+
+/* Paragraph styles for about section */
+.about-text > p {
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+/* Unordered list styles for about section */
+.about-ul {
+  margin-bottom: 40px;
+}
+
+.about-ul li {
+  list-style: none; /* Remove default list style */
+  display: flex; /* Display items in a row */
+  align-items: center; /* Align items vertically */
+}
+
+.about-ul p {
+  text-decoration: none; /* Remove underline */
+  color: #e43c09;
+  font-size: 21px;
+  line-height: 35px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* Button styles for about section */
+.about-btn,
+.read-btn {
+  text-decoration: none; /* Remove underline */
+  padding: 10px 25px;
+  font-size: 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 1s; /* Transition effect */
+}
+
+.about-btn {
+  background-color: #000;
+  color: #fff;
+}
+
+.about-btn:hover {
+  background-color: #e43c09; /* Background color on hover */
+}
+
+/* Background image for about section */
+.about-bg {
+  width: 50%;
+  height: 580px;
+  background: url("assets/solu-31.jpeg"); /* Background image */
+  background-blend-mode: multiply; /* Blend mode */
+  background-position: center; /* Center the background image */
+  background-size: cover; /* Cover the entire container */
+  border-radius: 20px;
+}
+
+/* Read section styles */
+.read {
+  padding: 120px 0;
+  background: url(assets/idea2.jpg) rgb(0, 2, 8); /* Background image */
+  background-position: center; /* Center the background image */
+  background-size: contain; /* Contain the background image */
+  background-repeat: no-repeat; /* No repeat */
+  text-align: center; /* Text alignment */
+}
+
+/* Text styles for read section */
+.read-text {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.read-text h3 {
+  font-size: 42px;
+  font-weight: 400;
+}
+
+/* Button styles for read section */
+.read-btn {
+  background-color: #fff;
+  color: black;
+  border: 2px solid #000;
+}
+
+.read-btn:hover {
+  background-color: transparent; /* Transparent background on hover */
+  color: #fff; /* Text color on hover */
+  border: 2px solid #e43c09; /* Border color on hover */
+}
+
+/* Icon styles for read section */
+.read-i {
+  font-size: 22px;
+  font-weight: 1000;
+  align-items: center;
+}
+
+.read-i:hover {
+  color: #fff; /* Icon color on hover */
+}
+
+/* Benefits header styles */
+.benefits-header {
+  margin-top: 100px;
+}
+
+.benefits-header-title {
+  display: flex; /* Display items in a row */
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #e43c09;
+}
+
+.benefits-header i {
+  margin-right: 10px;
+}
+
+/* Benefits text styles */
+.benefits-text h1 {
+  font-size: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.benefits-text p {
+  font-size: 28px;
+  margin-bottom: 60px;
+  font-weight: 500;
+  line-height: 35px;
+  max-width: 50%;
+}
+
+/* Benefits grid layout */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.benefits-child h5 {
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.benefits-child p {
+  font-size: 20px;
+  color: gray;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+/* Team section styles */
+.team {
+  padding: 120px 0;
+}
+
+/* Flexbox layout for team section */
+.team-flex {
+  display: flex; /* Display items in a row */
+  gap: 30px; /* Spacing between items */
+}
+
+/* Text container for team section */
+.team-text {
+  width: 50%;
+}
+
+.team-samll-title i {
+  margin-right: 10px;
+}
+
+.team-member i {
+  font-size: 25px; /* Icon size */
+  margin-right: 20px;
+  color: rgb(31, 79, 238); /* Icon color */
+}
+
+.team-samll-title {
+  display: flex; /* Display items in a row */
+  text-align: center; /* Text alignment */
+  align-items: center; /* Align items vertically */
+  font-size: 25px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #e43c09;
+}
+
+.team .team-title {
+  max-width: 280px;
+}
+
+.team-title h1 {
+  font-size: 75px;
+  font-weight: 500;
+}
+
+/* Team grid layout */
+.team-grid {
+  width: 50%;
+  display: grid; /* Display items in a grid */
+  gap: 40px; /* Spacing between items */
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+}
+
+/* Avatar styles for team members */
+.team-member .avatar {
+  background-position: center; /* Center the background image */
+  background-size: cover; /* Cover the entire container */
+  border-radius: 20px;
+  height: 220px;
+}
+
+/* Team member text styles */
+.team-member-text h5 {
+  font-size: 22px;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.team-member-text p {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #e43c09;
+  margin-bottom: 15px;
+}
+
+/* Footer styles */
+.footer {
+  padding: 50px 0;
+  border-top: 4px solid #e43c09;
+  background: url(assets/down2.jpeg) rgba(0, 0, 0, 0.85); /* Background image with overlay */
+  background-position: center; /* Center the background image */
+  background-size: cover; /* Cover the entire container */
+  background-blend-mode: multiply; /* Blend mode */
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* Footer grid layout */
+.footer-grid {
+  display: grid; /* Display items in a grid */
+  gap: 55px; /* Spacing between items */
+  grid-template-columns: repeat(4, 1fr); /* Four columns */
+}
+
+/* Subscription section styles */
+.subs {
+  margin-top: 80px;
+}
+
+/* Contact section heading styles */
+.contact h5 {
+  color: #e43c09;
+  font-weight: 500px;
+  font-size: 16px;
+}
+
+/* Footer heading styles */
+.footer h4 {
+  text-align: left;
+  margin: 22px 0;
+  font-size: 18px;
+}
+
+/* Follow text styles */
+.followicons a {
+  text-decoration: none; /* Remove underline */
+}
+
+/* Footer icon styles */
+.footer i {
+  margin-right: 20px;
+  font-size: 18px; /* Icon size */
+  color: rgb(189, 186, 186); /* Icon color */
+}
+
+.footer i:hover {
+  color: #e43c09; /* Icon color on hover */
+}
+
+/* Footer list styles */
+.footer li {
+  list-style: none; /* Remove default list style */
+  line-height: 30px;
+  font-size: 16px;
+  color: rgb(189, 186, 186);
+}
+
+.footer li:hover {
+  color: #f8f5f5; /* list color on hover */
+}
+
+/* Subscription sub-grid layout */
+.subs-sub-grid {
+  display: grid; /* Display items in a grid */
+  gap: 5px; /* Spacing between items */
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+}
+
+/* Input field styles */
+input[type="text"],
+input[type="submit"] {
+  padding: 13px;
+  margin: 8px 0;
+  display: inline-block; /* Display as inline block */
+  border: 1px solid #e43c09;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer; /* Cursor style */
+}
+
+input[type="text"]:focus {
+  background-color: #f3c4bc; /* Background color on focus */
+}
+
+input[type="text"] {
+  width: 80%; /* Width */
+}
+
+input[type="submit"] {
+  background-color: #e43c09;
+  color: white;
+  border: 2px solid transparent;
+  width: 15%;
+  transition: 1s; /* Transition effect */
+}
+
+input[type="submit"]:hover {
+  background-color: #611c07;
+  border: 2px solid #fff; /* Box shadow on active */
+}
+
+input[type="submit"]:active {
+  box-shadow: 2px 2px 8px rgb(238, 233, 231);
+}
+
+/* Copyright section styles */
+.copyright {
+  display: flex; /* Display items in a row */
+  gap: 50px; /* Spacing between items */
+  text-align: center; /* Text alignment */
+  justify-content: center; /* Center items horizontally */
+  margin-top: 30px;
+}
+
+.copyright p {
+  font-size: 16px;
+}
+
+/* Policy link styles */
+.policy a {
+  text-decoration: none; /* Remove underline */
+  color: #fff;
+}
+
+.policy a:hover {
+  color: #e43c09; /* Text color on hover */
+  text-decoration: underline;
+}
+
+/* Media queries for responsive design */
+
+@media only screen and (max-width: 1200px) {
+  /* Adjustments for medium-sized screens */
+
+  /* Banner hero section */
+  .banner-hero-text {
+    padding: 210px 0;
+  }
+
+  .banner-hero-title,
+  .banner-hero-subtitle {
+    font-size: 80px;
+  }
+
+  .banner-text p {
+    font-size: 20px;
+  }
+
+  /* About section */
+  .about-text > h3 {
+    font-size: 50px;
+  }
+
+  /* Read section */
+  .read-text h3 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  /* Adjustments for small-sized screens */
+
+  /* Banner hero section */
+  .banner-hero-title,
+  .banner-hero-subtitle {
+    font-size: 70px;
+  }
+
+  .banner-text {
+    max-width: 100%;
+  }
+
+  .banner-text p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .banner-hero-text {
+    padding-top: 190px;
+    padding-bottom: 120px;
+  }
+
+  /* About section */
+  .about {
+    padding: 80px 0;
+  }
+
+  .about-flex {
+    gap: 50px; /* Spacing between items */
+  }
+
+  .about-text {
+    width: 50%;
+  }
+
+  .about-text > h3 {
+    font-size: 40px;
+  }
+
+  .about-bg {
+    height: 480px;
+  }
+
+  .about-text > p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .about-ul p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  /* Read section */
+  .read {
+    padding: 80px 0;
+  }
+
+  .read-text h3 {
+    font-size: 30px;
+  }
+
+  /* Benefits section */
+  .benefits-header {
+    margin-top: 80px;
+  }
+
+  .benefits-text h1,
+  .team-title h1 {
+    font-size: 60px;
+  }
+
+  .benefits-text p {
+    font-size: 25px;
+    max-width: 100%;
+  }
+
+  .benefits-child h5 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .benefits-child p {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+
+  /* Team section */
+  .team {
+    padding: 80px 0;
+  }
+
+  .team-flex {
+    flex-direction: column; /* Column layout */
+  }
+
+  .team .team-title {
+    max-width: 100%;
+  }
+
+  .team-text {
+    width: 100%;
+  }
+
+  .team-grid {
+    width: 100%;
+  }
+
+  /* Footer section */
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Other media queries for smaller screens */
+
+@media only screen and (max-width: 768px) {
+  /* Adjustments for extra small-sized screens */
+
+  /* Banner hero section */
+  .banner-hero-title,
+  .banner-hero-subtitle {
+    font-size: 52px;
+  }
+
+  /* About section */
+  .about {
+    padding: 70px 0;
+  }
+
+  .about-flex {
+    gap: 25px;
+    flex-direction: column-reverse;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+
+  .about-text > h3 {
+    max-width: fit-content;
+  }
+
+  .about-bg {
+    width: 100%;
+    height: 280px;
+  }
+
+  /* Benefits section */
+  .benefits-text p {
+    margin-bottom: 40px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .benefits-header {
+    margin-top: 60px;
+  }
+
+  .benefits-header-title {
+    font-size: 18px;
+  }
+
+  .benefits-text h1,
+  .team-title h1 {
+    font-size: 45px;
+  }
+
+  /* Team section */
+  .team {
+    padding: 60px 0;
+  }
+
+  /* Form input adjustments */
+  input[type="text"] {
+    width: 90%;
+  }
+
+  input[type="submit"] {
+    width: 30%;
+  }
+
+  /* footer paragraph size adjustments */
+  .copyright > p {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjustments for smaller extra small-sized screens */
+
+  /* Banner hero section */
+  .banner-hero-title,
+  .banner-hero-subtitle {
+    font-size: 42px;
+  }
+
+  .banner-hero-text {
+    padding-top: 160px;
+    padding-bottom: 90px;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  /* Read section */
+  .read {
+    padding: 60px 0;
+  }
+
+  .read-text h3 {
+    font-size: 23px;
+  }
+
+  .about-btn,
+  .read-btn {
+    padding: 8px 22px;
+    font-size: 15px;
+  }
+
+  /* Benefits section */
+  .benefits-text p {
+    font-size: 22px;
+  }
+
+  .about-bg {
+    height: 150px;
+  }
+
+  .about-text > h3 {
+    font-size: 32px;
+  }
+
+  .benefits-text h1,
+  .team-title h1 {
+    font-size: 40px;
+  }
+
+  /* Team section */
+  .team-samll-title {
+    font-size: 18px;
+  }
+
+  .team-grid {
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .team-member-text {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  /* Adjustments for smallest extra small-sized screens */
+
+  /* Hamburger menu */
+  .menu-item-holder {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  /* Read section */
+  .read-text h3 {
+    font-size: 20px;
+  }
+
+  /* Benefits and Team section */
+  .benefits-text h1,
+  .team-title h1 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjustments for very small screens */
+
+  /* Logo size adjustment */
+  .logo {
+    font-size: 28px;
+  }
+
+  /* Banner hero section */
+  .banner-hero-text {
+    padding-top: 130px;
+    padding-bottom: 60px;
+  }
+
+  .banner-hero-title,
+  .banner-hero-subtitle {
+    font-size: 35px;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  /* About section */
+  .about {
+    padding: 50px 0;
+  }
+
+  .about-text > h3 {
+    font-size: 25px;
+  }
+
+  .about-text > p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  /* Benefits section */
+  .benefits-header {
+    margin-top: 35px;
+  }
+
+  .benefits-grid {
+    gap: 25px;
+  }
+
+  .benefits-text h1,
+  .team-title h1 {
+    font-size: 32px;
+  }
+
+  .benefits-text p {
+    font-size: 20px;
+  }
+
+  /* Team section */
+  .team-grid {
+    gap: 20px;
+  }
+
+  /* Footer grid adjustment */
+  .footer-grid {
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  /* Subscription section */
+  .subs {
+    margin-top: 60px;
+  }
+}
